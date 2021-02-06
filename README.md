@@ -32,7 +32,7 @@ Author:
 - Mikey Perara
 - Debasu Eyasu
 
-License:
+Acknowledgements:
 - Photos
 - Charity Navigator(https://www.charitynavigator.org/)- used to find local charities and organizations 
 - Google Maps (https://developers.google.com/maps/documentation/javascript/examples/places-searchbox) - used to find which charities and organizations were in close proximity to the user.
