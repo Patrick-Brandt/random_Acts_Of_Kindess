@@ -3,17 +3,17 @@ Name
     Seattle Volunteer
 
 Link: 
-    Main: https://github.com/MikeyP957/random_Acts_Of_Kindess.git
-    Fork: https://github.com/Patrick-Brandt/random_Acts_Of_Kindess.git
+    - Main: https://github.com/MikeyP957/random_Acts_Of_Kindess.git
+    - Fork: https://github.com/Patrick-Brandt/random_Acts_Of_Kindess.git
 
 Description:
     Here we created a webpage where Seattlites are able to connect with local charties and orgainzation based on their interest. They can select a variety of interests including animals, social,politcal, etc. The user is able to volunteer their time or make donations via goods, food, or cash. We have also included a map to enable the user to search which organizations are in close proximity to their location. 
 
 Built with:
-    Boostrap
-    Google API
-    Charity API
-    Charity Navigator API
+    - Boostrap
+    - Google API
+    - Charity API
+    - Charity Navigator API
 
 Screenshots
 
