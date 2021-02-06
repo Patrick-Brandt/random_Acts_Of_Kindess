@@ -1,3 +1,11 @@
+var charityName = '';
+var charityAddress = '';
+var charityWebsite = '';
+var charityType ='';
+
+
+
+
 const charityNavigatorKey = "3ec0b4533e236b7a527fbf81dd68dd75";
 const charityNavigatorId = "1f1b3eac";
 const googleMapKey = 'AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ';
