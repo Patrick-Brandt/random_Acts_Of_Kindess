@@ -33,4 +33,6 @@ Author:
 - Debasu Eyasu
 
 License:
-    Photos
+- Photos
+- https://www.charitynavigator.org/
+- https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
