@@ -1,15 +1,29 @@
 body {
   border-top: 0ch;
   box-sizing: border-box;
-  background-color: white;
   font-size: 30px;
+  background-color: #007bff;
 }
+
 .container {
   padding-left: 50px;
   margin-top: 0ch;
   width: 850px;
 }
-.btn {
+
+.jumbotron {
+  background-color: transparent;
+  margin-top:0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-radius: 0;
+  border-bottom: 2px solid rgb(105, 139, 12);
+}
+.bg-primary h3 {
+  border-radius: 3px;
+  border-color: red;
+}
+/*.btn {
   align-content: center;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -24,16 +38,17 @@ body {
   width: 150px;
   height: 50px;
   margin-top: 15px;
+}*/
+
+.buttonDiv {
+  width: 50%;
+  margin: auto;
+  width: 50px;
 }
 
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
-    margin-top:0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    color: #18c535;
-    border-radius: 0;
-    border-bottom: 2px solid rgb(105, 139, 12);
-  }
+#start {
+  display: block;
+  margin: 0px, 50px, 0px, 50px;
+  width: 20%;
+}
   

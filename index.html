@@ -9,19 +9,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
-<body>
-    <header class="jumbotron">
-        <h3 class="display-3">Volunteer Seattle</h3>
-        <h2 class="display"> Helping residents of the Pacific Northwest find volunteer opportunities and charitable organizations.</h2>
-        <p>"There's nothing <em>stronger</em> than the <em>heart</em> of a volunteer!"</p>
+<body class="bg-primary">
+    <header class="jumbotron bg-primary">
+        <h3 class="display-3 text-center font-weight-bold">Volunteer Seattle</h3>
+        <h2 class="display text-center"> Helping residents of the Pacific Northwest find volunteer opportunities and charitable organizations.</h2>
+        <br>
+        <p class="text-center">"There's nothing <em>stronger</em> than the <em>heart</em> of a volunteer!"</p>
     </header>
     <!--Carosel with images-->
-    <div class="container">
+    <div class="container bg-primary">
         <div id="demo" class="carousel slide" data-ride="carousel">
-
             <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -53,16 +53,13 @@
 
         </div>
     </div>
+    <br>
+    <br>
     <!--click to start button-->
-    <div>
-        <button class="btn">Start</button>
+    <div class="buttonDiv">
+        <button type="button" class="btn btn-lg btn-block btn-success" id="start">Start Here</button>
     </div>
-    <div class="starter">
-        <ul class="charity">
-
-        </ul>
-    </div>
-
+    <!-- Link to Javascript -->
     <script src="script/script.js"></script>
 </body>
 
