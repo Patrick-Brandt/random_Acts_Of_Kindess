@@ -9,17 +9,9 @@ body {
   margin-top: 0ch;
   width: 850px;
 }
-
-/*.jumbotron {
-    text-align: center;
-    background-color: transparent;
-    margin-top:0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    color: #18c535;
-    border-radius: 0;
-  }*/
-  
+span {
+  color: red;
+}  
   .navbar-nav a{
     color: white !important;
     margin-left:30px;
