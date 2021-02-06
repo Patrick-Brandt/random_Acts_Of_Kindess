@@ -9,9 +9,21 @@ body {
   margin-top: 0ch;
   width: 850px;
 }
+
+.jumbotron {
+padding-top: 0;
+padding-bottom: 5px;
+margin-bottom: 0;
+}
+
 span {
   color: red;
-}  
+} 
+
+main {
+  margin-bottom: 0;
+} 
+
   .navbar-nav a{
     color: white !important;
     margin-left:30px;
@@ -19,6 +31,7 @@ span {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   footer p {
     color: white;
   }
