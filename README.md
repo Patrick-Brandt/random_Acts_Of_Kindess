@@ -34,5 +34,5 @@ Author:
 
 License:
 - Photos
-- https://www.charitynavigator.org/
+- Charity Navigator (https://www.charitynavigator.org/)
 - https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
