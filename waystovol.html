@@ -37,53 +37,24 @@
         </div>
     </main>
 
-    <!--Carosel with images-->
-    <div class="container">
-        <div id="demo" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/vol 1.png " class="d-block w-100" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vol 2.png" class="d-block w-100" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vol 3.png" class="d-block w-100" alt="">
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-
+    <form class="container">
+        <div class="form-group">
+          <label for="FormControlcity">City</label>
+          <input type="text" class="form-control"  placeholder="City">
         </div>
-    </div>
-    <!--click to start button-->
-    <div>
-        <!--Ways to volunteer link substitut the search button-->
-        <!-- <button class="btn">Start</button> -->
-    </div>
-    <div class="starter">
-        <ul class="charity">
-
-        </ul>
-    </div>
-    <footer class="footer mt-auto py-3 bg-success border-top border-primary">
-        <p style="text-align: center;">We can put some messages if necessary</p>
-    </footer>
+        <div class="form-group">
+          <label for="FormControArea">Area of Volunteer</label>
+          <select class="form-control">
+            <option>Select one</option>
+            <option>Education</option>
+            <option>Environment</option>
+            <option>Pet</option>
+            <option>Social Work</option>
+            <option>others</option>
+          </select>
+        </div>
+       <div class="form-group">This area will serve as an output display with some javascript manupulation.</div>
+      </form>
     <!-- jQuery and bootstrap bundele links to displaye humburgure menu(hide elements of navbar) and others -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
