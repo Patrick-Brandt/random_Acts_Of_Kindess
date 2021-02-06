@@ -18,7 +18,7 @@ Built with:
 Screenshots
 
 Learning:
-    When creating this website we ran into a few key issues
+    When creating this website we ran into a few key issues:
     
 - Github: We created a main branch to work on in GitHub but we were unsure of how to gain full access rights. The teamate who created this had to then leave for a few days on paternity which left us with out access to the github repo we created. The instructor told us then to fork the path which worked but left us with push/pull issues with all the teammates. 
 
@@ -35,4 +35,4 @@ Author:
 License:
 - Photos
 - Charity Navigator(https://www.charitynavigator.org/)- used to find local charities and organizations 
-- Google Maps (https://developers.google.com/maps/documentation/javascript/examples/places-searchbox) - used to find which charities and organizations were in close proximity to the user 
+- Google Maps (https://developers.google.com/maps/documentation/javascript/examples/places-searchbox) - used to find which charities and organizations were in close proximity to the user.
