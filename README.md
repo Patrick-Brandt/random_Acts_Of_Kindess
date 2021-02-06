@@ -17,12 +17,12 @@ Built with:
 
 Screenshots
 
-Learnings:
+Learning:
     When creating this website we ran into a few key issues
     
-    - Github: We created a main branch to work on in GitHub but we were unsure of how to gain full access rights. The teamate who created this had to then leave for a few days on paternity which left us with out access to the github repo we created. The instructor told us then to fork the path which worked but left us with push/pull issues with all the teammates. 
+- Github: We created a main branch to work on in GitHub but we were unsure of how to gain full access rights. The teamate who created this had to then leave for a few days on paternity which left us with out access to the github repo we created. The instructor told us then to fork the path which worked but left us with push/pull issues with all the teammates. 
 
-    - Google Maps API: This API was diffuclt to gain access to. It wanted us to pay for the service and we had to find a way to work around this. 
+- Google Maps API: This API was diffuclt to gain access to. It wanted us to pay for the service and we had to find a way to work around this. 
     
 
 Author:
