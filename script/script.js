@@ -30,7 +30,7 @@ startButton.addEventListener("click", function(){
 
         for ( var i = 0; i<data.length; i++) {
 
-            if (selectedCause === data[i].irsClassification.nteeClassification){
+            if (selectedCause === data[i].irsClassification.nteeType){
                 filteredCharities.push(data[i])
             }
         }
