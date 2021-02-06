@@ -1,5 +1,5 @@
 # random_Acts_Of_Kindess
-Name
+Name:
     Seattle Volunteer
 
 Link: 
@@ -7,7 +7,7 @@ Link:
 - Fork: https://github.com/Patrick-Brandt/random_Acts_Of_Kindess.git
 
 Description:
-    Here we created a webpage where Seattlites are able to connect with local charties and orgainzation based on their interest. They can select a variety of interests including animals, social,politcal, etc. The user is able to volunteer their time or make donations via goods, food, or cash. We have also included a map to enable the user to search which organizations are in close proximity to their location. 
+   Here we created a webpage where Seattleites are able to connect with local charities and organization based on their interest. They can select a variety of interests including animals, social, political, etc. The user is able to volunteer their time or make donations via goods, food, or cash. We have also included a map to enable the user to search which organizations are in close proximity to their location.
 
 Built with:
 - Boostrap
@@ -26,11 +26,11 @@ Learning:
     
 
 Author:
-    Cristina Acosta 
-    Patrick Brandt
-    Megan Russell
-    Mikey Perara
-    Debasu Eyasu
+- Cristina Acosta 
+- Patrick Brandt
+- Megan Russell
+- Mikey Perara
+- Debasu Eyasu
 
 License:
     Photos
