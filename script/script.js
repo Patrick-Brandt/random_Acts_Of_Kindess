@@ -1,10 +1,3 @@
-var charityName = '';
-var charityAddress = '';
-var charityWebsite = '';
-var charityType ='';
-
-
-
 
 const charityNavigatorKey = "3ec0b4533e236b7a527fbf81dd68dd75";
 const charityNavigatorId = "1f1b3eac";
@@ -26,10 +19,10 @@ startButton.addEventListener("click", function(){
         console.log(data);
 
         //create variables/ object to store data and append
-        var charityName = [0].charityName;
-        var charityAddress = [0].mailingAddress.streetAddress1;
-        var charityCity = [0].mailingAddress.city;
-        var charityClassification = [0].irsClassification.nteeClassification;
+        var charityName = data[0].charityName;
+        var charityAddress = data[0].mailingAddress.streetAddress1;
+        var charityCity = data[0].mailingAddress.city;
+        var charityClassification = data[0].irsClassification.nteeClassification;
 
         var newListElm = document.createElement("li");
 
