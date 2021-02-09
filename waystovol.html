@@ -14,10 +14,11 @@
 
 <body>
     <header class="jumbotron">
-        <h2 class="display">Volunteer</h2>
-        <p>"There is nothig STRONGER than thew HEART of VOLUNTEERS!" ... OSCAR WILDE</p>
-        <!-- <p>There is nothig STRONGER than thew HEART of VOLUNTEERS</p> -->
-    </header>
+        <header class="jumbotron">
+            <h3 class="display-3 text-center font-weight-bold">Volunteer Seattle</h3>
+            <h2 class="display text-center"> Connecting community members to volunteer opportunities and charitable organizations.</h2>
+            <h4 class="text-center">"There's nothing <em>stronger</em> than the <span>&#9829</span> of a volunteer!"</p>
+        </header>
     <!--Nav bar with image brand-->
     <main class="navbar navbar-expand-lg navbar-light bg-success">
         <a class="navbar-brand" href="#"><img src="images/vol 4.png" width="30" height="30" alt="" loading="lazy"></a>
@@ -39,22 +40,22 @@
 
     <form class="container">
         <div class="form-group">
-          <label for="FormControlcity">City</label>
-          <input type="text" class="form-control"  placeholder="City">
+          <label for="FormControlcity">Your Zip Code</label>
+          <input type="text" class="form-control"  placeholder="Zip Code">
         </div>
         <div class="form-group">
           <label for="FormControArea">Area of Volunteer</label>
           <select class="form-control" id="cause">
             <option>Select A Cause You Care About</option>
-            <option>Education</option>
-            <option>Environment</option>
-            <option>Animals</option>
-            <option>Social Work</option>
-            <option>Other</option>
+            <option>Educational Institutions and Related Activities</option>
+            <option>Arts, Culture and Humanities</option>
+            <option>Civil Rights, Social Action, Advocacy</option>
+            <option>Human Services - Multipurpose and Other</option>
+            <option>Public Safety, Disaster Preparedness and Relief</option>
           </select>
         </div>
         <button type="button" id="search-btn">Submit</button>
-       <div class="form-group">This area will serve as an output display with some javascript manupulation.</div>
+       <div class="form-group results"></div>
       </form>
     <!-- jQuery and bootstrap bundele links to displaye humburgure menu(hide elements of navbar) and others -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
