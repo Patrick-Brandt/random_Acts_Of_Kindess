@@ -9,7 +9,7 @@ const zipCodeKey = 'dld2qnRg3gwdOcrlLEf9eYdsbLtx0KZzyshZF0cwghcerhbZfMTAePFUjzpf
 const zipCodeID = ''
 var charityNavigatorURL = "https://api.data.charitynavigator.org/v2/Organizations?app_id=1f1b3eac&app_key=3ec0b4533e236b7a527fbf81dd68dd75&state=WA&city=Seattle&zip="
 var googleMapURL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ'
-var startButton = document.getElementById("search-btn")
+var startButton = document.getElementById("submit-btn")
 var appendList = document.querySelector(".charity")
 
 startButton.addEventListener("click", function(){
