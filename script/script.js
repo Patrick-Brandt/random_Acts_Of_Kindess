@@ -56,6 +56,18 @@ startButton.addEventListener("click", function(){
                 websiteAnchor.setAttribute('href', charityWebsite);
                 websiteAnchor.innerHTML = charityWebsite;
                 resultsTag.append(cityTag, websiteAnchor);
+
+                // function initMap() {
+
+                //     var options = {
+                //         zoom:8,
+                //         center:{lat:47.6062,lng: -122.3321}
+                        
+                //     }
+
+                //     var map = new google.maps.Map(document.getElementById('map'), options)
+
+                // }
             
             
             }
