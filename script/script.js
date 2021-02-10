@@ -52,10 +52,11 @@ startButton.addEventListener("click", function(){
                 console.log(websiteAnchor)
 
 
-                cityTag.append(charityName, charityAddress, charityCity);
+                cityTag.append("charityName", charityAddress, charityCity);
+                
                 websiteAnchor.setAttribute('href', charityWebsite);
                 websiteAnchor.innerHTML = charityWebsite;
-                resultsTag.append(cityTag, charityNameTag, websiteAnchor);
+                resultsTag.append(cityTag, charityNameTag, +"<br>"+ websiteAnchor);
 
 
                 
