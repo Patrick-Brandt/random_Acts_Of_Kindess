@@ -5,7 +5,11 @@
     <title>Volunteer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This is the Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--This is the Bulma CDN.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -13,32 +17,34 @@
 </head>
 
 <body>
+    <!--Bootstrap Jumbotron-->
     <header class="jumbotron">
-        <h3 class="display-3 text-center font-weight-bold">Volunteer Seattle</h3>
+        <h3 class="display-3 text-center font-weight-bold">Random Acts of Kindness</h3>
         <h2 class="display text-center"> Connecting community members to volunteer opportunities and charitable organizations.</h2>
         <h4 class="text-center">"There's nothing <em>stronger</em> than the <span>&#9829</span> of a volunteer!"</p>
     </header>
-    <!--Nav bar with image brand-->
-    <main class="navbar navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand" href="#"><img src="images/vol 4.png" width="30" height="30" alt="" loading="lazy"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+   <!--Bulma Navbar-->
+   <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!--The following <a> is just the icon on the navbar, not a link-->
+            <a class="navbar-item">
+                <img src="images/vol 4.jpg">
+            </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <nav class="navbar-nav ml-auto">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="waystovol.html">Ways to Volunteer</a>
-                <a class="nav-link" href="#">News</a>
-                <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link" href="#">About Us</a>
-
-            </nav>
+            <a href="index.html" class="navbar-item">Home</a>
+                
+            <a href="waystovol.html" class="navbar-item">Ways to Volunteer</a>
+            <!--The burger below is only active on touch devices. It has to appear as the last child of navbar-brand. It has to contain three EMPTY span tags. -->
+            <!--This feature really isn't necessary unless we have more links. I will keep it commented out in case we add more later on. 
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a> -->
         </div>
-    </main>
+    </nav>
     <br>
-    <!--Carousel with images-->
+    <!--Bootstrap Carousel with images-->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
@@ -81,8 +87,11 @@
 
         </ul>
     </div>
-    <footer class="footer mt-auto py-3 bg-success border-top border-primary">
-        <p style="text-align: center;"></p>
+    <!--Footer-->
+    <footer class="footer has-background-success-light">
+        <div class="content has-text-centered">
+            <pclass="pb-6">Put something here in footer.</p>
+        </div>
     </footer>
     <!-- jQuery and bootstrap bundle links to display menu(hide elements of navbar) and others -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
