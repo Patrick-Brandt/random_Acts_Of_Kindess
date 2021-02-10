@@ -1,16 +1,14 @@
 
-// 
+// Constants for API's Used
 
 const charityNavigatorKey = "3ec0b4533e236b7a527fbf81dd68dd75";
 const charityNavigatorId = "1f1b3eac";
-const googleMapKey = 'AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ';
-const googleMapID = 'ChIJVTPokywQkFQRmtVEaUZlJRA'
-const zipCodeKey = 'dld2qnRg3gwdOcrlLEf9eYdsbLtx0KZzyshZF0cwghcerhbZfMTAePFUjzpfsyaI'
-const zipCodeID = ''
 var charityNavigatorURL = "https://api.data.charitynavigator.org/v2/Organizations?app_id=1f1b3eac&app_key=3ec0b4533e236b7a527fbf81dd68dd75&state=WA&city=Seattle&zip="
-var googleMapURL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ'
-var startButton = document.getElementById("submit-btn")
+
+var startButton = document.getElementById("search-btn")
 var appendList = document.querySelector(".charity")
+
+// Starts Function on Submit
 
 startButton.addEventListener("click", function(){
     fetch(charityNavigatorURL)
@@ -44,7 +42,9 @@ startButton.addEventListener("click", function(){
                 var charityCity = data[i].mailingAddress.city;
                 var cityTag = document.createElement('p');
                 var charityName = data[i].charityName;
+                var charityNameTag = document.createElement('b')
                 var charityAddress = data[i].mailingAddress.streetAddress1;
+                var charMailAdd = document.createElement('p')
                 var charityWebsite = data[i].charityNavigatorURL;
                 var websiteAnchor = document.createElement('a');
                 
@@ -52,39 +52,33 @@ startButton.addEventListener("click", function(){
                 console.log(websiteAnchor)
 
 
-                cityTag.append(charityName,charityAddress, charityCity);
+                cityTag.append(charityName, charityAddress, charityCity);
                 websiteAnchor.setAttribute('href', charityWebsite);
                 websiteAnchor.innerHTML = charityWebsite;
-                resultsTag.append(cityTag, websiteAnchor);
+                resultsTag.append(cityTag, charityNameTag, websiteAnchor);
 
-                // function initMap() {
 
-                //     var options = {
-                //         zoom:8,
-                //         center:{lat:47.6062,lng: -122.3321}
-                        
-                //     }
-
-                //     var map = new google.maps.Map(document.getElementById('map'), options)
-
-                // }
-            
-            
+                
             }
         }
 
         console.log(filteredCharities);
 
-        
-        // Creates List of Charities based on user search criteria
-        var newListElm = document.createElement("li");
-
-            newListElm.innerHTML = "<p>Charity Name: " + charityName + "</p><br> <p>Charity Address" + charityAddress  + "</p>"
-            
-            // appendList.appendChild(newListElm)
-
-
      });
 
      
 })
+
+const googleMapKey = 'AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ';
+const googleMapID = 'ChIJVTPokywQkFQRmtVEaUZlJRA'
+'dld2qnRg3gwdOcrlLEf9eYdsbLtx0KZzyshZF0cwghcerhbZfMTAePFUjzpfsyaI'
+var googleMapURL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ'
+
+     let map;
+
+     function initMap() {
+       map = new google.maps.Map(document.getElementById("map"), {
+         center: { lat: -122.3321, lng: 47.6062 },
+         zoom: 8,
+       });
+     }
