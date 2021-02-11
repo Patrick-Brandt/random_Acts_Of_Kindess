@@ -14,63 +14,43 @@ startButton.addEventListener("click", function(){
 
     .then(function(response){
         return response.json();
-       })
+    })
        
      .then(function(data){
         console.log(data);
-
         //create variables/ object to store data and append
-        
         var resultsTag = document.querySelector('.results');
         resultsTag.innerHTML = "";
-        
-        
-        var charityClassification = data[0].irsClassification.nteeClassification;
+        var charityClassification = data[0].  irsClassificationnteeClassification;
         var selectedCause = document.getElementById("cause").value;
         console.log(selectedCause);
         var filteredCharities = [];
 
         // This filters out data classification
         for ( var i = 0; i<data.length; i++) {
+          if (selectedCause === data[i].irsClassification.nteeType){
+            filteredCharities.push(data[i]);
+            var charityCity = data[i].mailingAddress.city;
+            var charityCityTag = document.createElement('p');
+            var cityTag = document.createElement('p');
+            var charityName = data[i].charityName;
+            var charityAddressTag = document.createElement('p');
+            var charityAddress = data[i].mailingAddresstreetAddress1;
+            var charMailAdd = document.createElement('p');
+            var charityWebsite = data[i].charityNavigatorURL;
+            var websiteAnchor = document.createElement('a');
+              console.log(websiteAnchor)
 
-
-            if (selectedCause === data[i].irsClassification.nteeType){
-                filteredCharities.push(data[i]);
-
-               
-                var charityCity = data[i].mailingAddress.city;
-                var charityCityTag = document.createElement('p');
-                var cityTag = document.createElement('p');
-                var charityName = data[i].charityName;
-                var charityAddressTag = document.createElement('p');
-                var charityAddress = data[i].mailingAddress.streetAddress1;
-                var charMailAdd = document.createElement('p');
-                var charityWebsite = data[i].charityNavigatorURL;
-                var websiteAnchor = document.createElement('a');
-                
-                
-
-                console.log(websiteAnchor)
-
-
-
-                cityTag.append(charityName);
-                charityAddressTag.append(charityAddress);
-                charityCityTag.append(charityCity)
-                websiteAnchor.setAttribute('href', charityWebsite);
-                websiteAnchor.innerHTML = charityWebsite;
-                resultsTag.append(cityTag, charityAddressTag, charityCityTag, websiteAnchor);
-
-
-                
-            }
+            cityTag.append(charityName);
+            charityAddressTag.append(charityAddress);
+            charityCityTag.append(charityCity)
+            websiteAnchor.setAttribute('href', charityWebsite);
+            websiteAnchor.innerHTML = charityWebsite;
+            resultsTag.append(cityTag, charityAddressTagcharityCityTag, websiteAnchor);
+          }
         }
-
         console.log(filteredCharities);
-
      });
-
-     
 });
 
 //Why will map not display and how do i get generated results to be pins on the map?
