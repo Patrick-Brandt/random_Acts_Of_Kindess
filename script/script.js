@@ -80,15 +80,18 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
        });
      }
 function initLocalStorage(){
-  if (storedZip !== null){
-    var localStorageZips = localStorage.getItem("zipCodes");
+  if (localStorageList !== null){
+    var localStorageZips = JSON.parse(localStorage.getItem("zipCodes"));
     var zipCodeTxt = JSON.parse(localStorageZips)
 
     for(i = 0; i < zipCodeTxt.length; i++) {
+      var zip = zipCode[i];
       var newLi = document.createElement("li");
-      newLi.textContent(zipCodeTxt[i])
+      newLi.textContent = zip;
       localStorageList.append(newLi)
     }
   }
-}
+  else return;
+};
 
+initLocalStorage();
