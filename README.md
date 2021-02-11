@@ -18,7 +18,7 @@
     - Charity Navigator API
 
 ## Things we learned:
-    ### When creating this website we ran into a few issues:
+### When creating this website we ran into a few issues:
     
     - Github: We created a main branch to work on in GitHub but we were unsure of how to gain full access rights. The teamate who created this had to then leave for a few days on paternity which left us with out access to the github repo we created. The instructor told us then to fork the path which worked but left us with push/pull issues with all the teammates. 
 
@@ -29,10 +29,13 @@
 ## Website Images:
  ### First page of the website. 
 ![Main Image of Website.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/Main.png?raw=true)
+
  ### Second page of the website,'Ways to volunteer'.
 ![Second Page of Website.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/waysToVolunteer.png?raw=true)
+
  ### Image of our dropdown menu, showing the charity options.
 ![Dropdown menu with volunteer options.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/dropdownMenu.png?raw=true)
+
  ### Responsive navbar shown on a small phone screen.
 ![Responsive navbar shown on a small screen.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/responsiveNav.png?raw=true)
  ### Responsive carousel shown on a small phone screen.
