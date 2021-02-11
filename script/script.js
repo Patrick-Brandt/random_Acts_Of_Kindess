@@ -1,5 +1,5 @@
 
-// Constants for API's Used
+// Constants for Charity Navigator API Used
 
 const charityNavigatorKey = "3ec0b4533e236b7a527fbf81dd68dd75";
 const charityNavigatorId = "1f1b3eac";
@@ -40,23 +40,35 @@ startButton.addEventListener("click", function(){
 
                
                 var charityCity = data[i].mailingAddress.city;
+                var charityCityTag = document.createElement('p');
                 var cityTag = document.createElement('p');
                 var charityName = data[i].charityName;
-                var charityNameTag = document.createElement('b')
+                var charityAddressTag = document.createElement('p');
                 var charityAddress = data[i].mailingAddress.streetAddress1;
-                var charMailAdd = document.createElement('p')
+                var charMailAdd = document.createElement('p');
                 var charityWebsite = data[i].charityNavigatorURL;
                 var websiteAnchor = document.createElement('a');
+                
                 
 
                 console.log(websiteAnchor)
 
 
+<<<<<<< HEAD
                 cityTag.append("charityName", charityAddress, charityCity);
                 
                 websiteAnchor.setAttribute('href', charityWebsite);
                 websiteAnchor.innerHTML = charityWebsite;
-                resultsTag.append(cityTag, charityNameTag, +"<br>"+ websiteAnchor);
+                resultsTag.append(cityTag, charityNameTag, websiteAnchor);
+=======
+
+                cityTag.append(charityName);
+                charityAddressTag.append(charityAddress);
+                charityCityTag.append(charityCity)
+                websiteAnchor.setAttribute('href', charityWebsite);
+                websiteAnchor.innerHTML = charityWebsite;
+                resultsTag.append(cityTag, charityAddressTag, charityCityTag, websiteAnchor);
+>>>>>>> 89f4ae2ae71c66205596a01770728d05c76b0e66
 
 
                 
@@ -68,18 +80,22 @@ startButton.addEventListener("click", function(){
      });
 
      
-})
+});
 
-const googleMapKey = 'AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ';
-const googleMapID = 'ChIJVTPokywQkFQRmtVEaUZlJRA'
-'dld2qnRg3gwdOcrlLEf9eYdsbLtx0KZzyshZF0cwghcerhbZfMTAePFUjzpfsyaI'
-var googleMapURL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCa_GtE78cio4hq8ZlvVZEVYEFQEgdOboQ'
+//Why will map not display and how do i get generated results to be pins on the map?
+
+const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
+// const googleMapID = 'ChIJVTPokywQkFQRmtVEaUZlJRA'
+// 'dld2qnRg3gwdOcrlLEf9eYdsbLtx0KZzyshZF0cwghcerhbZfMTAePFUjzpfsyaI'
+// var googleMapURL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=47.6062,-122.3321&radius=500&key=AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew'
 
      let map;
 
      function initMap() {
+         console.log('test')
        map = new google.maps.Map(document.getElementById("map"), {
-         center: { lat: -122.3321, lng: 47.6062 },
+         center: { lat: 47.6062095, lng: -122.3320708 },
          zoom: 8,
        });
      }
+
