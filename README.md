@@ -27,6 +27,13 @@
     - We had originally used Bootstrap in creating our website. When we were almost finished, we remembered that the assignment specified that we were to use a CSS framework that we were not taught in class (so not Bootstrap). We all researched different frameworks, and agreed on Bulma. We created another repository to practice using Bulma to recreate the website. It was reallt simple and easy to learn (mainly because the documentation is really easy for beginners to understand), so we went with it. Unfortunately, we ran into difficulties incorporating our Javascript into the new Bulma files. We had read articles warning against trying to use two different CSS frameworks in one project, but we tried it anyway. In the end, we ended up using Bootstrap Jumbotron, Bulma Navbar, and Bootstrap Carousel. We tested it out, and didn't notice any issues with styles or responsivity. 
     
 ## Website Images:
+![alt text.](image.jpg)
+![Main Image of Website.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/Main.png?raw=true)
+![Second Page of Website.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/waysToVolunteer.png?raw=true)
+![Dropdown menu with volunteer options.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/dropdownMenu.png?raw=true)
+![Responsive navbar shown on a small screen.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/responsiveNav.png?raw=true)
+![Responsive carousel shown on a small screen.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/responsiveNav.png?raw=true)
+![Responsive map shown on a small screen.](https://github.com/Patrick-Brandt/random_Acts_Of_Kindess/blob/main/Website%20Images/responsiveMap.png?raw=true)
 
 ## Authors:
     - Cristina Acosta 
