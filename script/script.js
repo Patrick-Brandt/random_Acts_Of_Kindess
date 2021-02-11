@@ -36,6 +36,8 @@ startButton.addEventListener("click", function(){
             var charityName = data[i].charityName;
             var charityAddressTag = document.createElement('p');
             var charityAddress = data[i].mailingAddress.streetAddress1;
+            var charityZipCode = data[i].mailingAddress.postalCode;
+            var charityZipCodeTag = document.createElement('p');
             var charMailAdd = document.createElement('p');
             var charityWebsite = data[i].charityNavigatorURL;
             var websiteAnchor = document.createElement('a');
@@ -44,9 +46,10 @@ startButton.addEventListener("click", function(){
             cityTag.append(charityName);
             charityAddressTag.append(charityAddress);
             charityCityTag.append(charityCity)
+            charityZipCodeTag.append(charityZipCode)
             websiteAnchor.setAttribute('href', charityWebsite);
             websiteAnchor.innerHTML = charityWebsite;
-            resultsTag.append(cityTag, charityAddressTag, websiteAnchor);
+            resultsTag.append(cityTag, charityAddressTag, charityCityTag, charityZipCodeTag, websiteAnchor);
           }
         }
      });
