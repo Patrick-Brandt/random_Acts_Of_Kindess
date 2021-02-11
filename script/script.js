@@ -3,10 +3,13 @@
 const charityNavigatorKey = "3ec0b4533e236b7a527fbf81dd68dd75";
 const charityNavigatorId = "1f1b3eac";
 var charityNavigatorURL = "https://api.data.charitynavigator.org/v2/Organizations?app_id=1f1b3eac&app_key=3ec0b4533e236b7a527fbf81dd68dd75&state=WA&city=Seattle&zip="
-
+//Html elements
 var startButton = document.getElementById("search-btn")
 var appendList = document.querySelector(".charity")
 var zipCode = document.querySelector(".zipCode")
+//array for local storage
+var storedZip = [];
+
 // Starts Function on Submit
 
 startButton.addEventListener("click", function(){
