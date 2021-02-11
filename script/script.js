@@ -7,6 +7,7 @@ var charityNavigatorURL = "https://api.data.charitynavigator.org/v2/Organization
 var startButton = document.getElementById("search-btn")
 var appendList = document.querySelector(".charity")
 var zipCode = document.querySelector(".zipCode")
+var localStorageList = document.querySelector("localStorage")
 //array for local storage
 var storedZip = [];
 
@@ -56,6 +57,9 @@ startButton.addEventListener("click", function(){
           }
         }
         console.log(filteredCharities);
+        //on click push the zipcode to array for local storage
+        storedZip.push(zipCode.value)
+        localStorage.setItem("zipCodes", JSON.stringify(storedZip))
      });
 });
 
@@ -75,5 +79,16 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
          zoom: 8,
        });
      }
+function initLocalStorage(){
+  if (storedZip !== null){
+    var localStorageZips = localStorage.getItem("zipCodes");
+    var zipCodeTxt = JSON.parse(localStorageZips)
 
+    for(i = 0; i < zipCodeTxt.length; i++) {
+      var newLi = document.createElement("li");
+      newLi.textContent(zipCodeTxt[i])
+      localStorageList.append(newLi)
+    }
+  }
+}
 
