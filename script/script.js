@@ -35,7 +35,7 @@ startButton.addEventListener("click", function(){
             var cityTag = document.createElement('p');
             var charityName = data[i].charityName;
             var charityAddressTag = document.createElement('p');
-            var charityAddress = data[i].mailingAddresstreetAddress1;
+            var charityAddress = data[i].mailingAddress.streetAddress1;
             var charMailAdd = document.createElement('p');
             var charityWebsite = data[i].charityNavigatorURL;
             var websiteAnchor = document.createElement('a');
@@ -49,7 +49,6 @@ startButton.addEventListener("click", function(){
             resultsTag.append(cityTag, charityAddressTag, websiteAnchor);
           }
         }
-        console.log(filteredCharities);
      });
 });
 
@@ -66,5 +65,3 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
          zoom: 8,
        });
      }
-
-
