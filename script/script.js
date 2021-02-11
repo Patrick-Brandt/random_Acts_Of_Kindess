@@ -46,7 +46,7 @@ startButton.addEventListener("click", function(){
             charityCityTag.append(charityCity)
             websiteAnchor.setAttribute('href', charityWebsite);
             websiteAnchor.innerHTML = charityWebsite;
-            resultsTag.append(cityTag, charityAddressTagcharityCityTag, websiteAnchor);
+            resultsTag.append(cityTag, charityAddressTag, websiteAnchor);
           }
         }
         console.log(filteredCharities);
@@ -56,9 +56,6 @@ startButton.addEventListener("click", function(){
 //Why will map not display and how do i get generated results to be pins on the map?
 
 const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
-// const googleMapID = 'ChIJVTPokywQkFQRmtVEaUZlJRA'
-// 'dld2qnRg3gwdOcrlLEf9eYdsbLtx0KZzyshZF0cwghcerhbZfMTAePFUjzpfsyaI'
-// var googleMapURL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=47.6062,-122.3321&radius=500&key=AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew'
 
      let map;
 
