@@ -6,11 +6,11 @@ var charityNavigatorURL = "https://api.data.charitynavigator.org/v2/Organization
 
 var startButton = document.getElementById("search-btn")
 var appendList = document.querySelector(".charity")
-
+var zipCode = document.querySelector(".zipCode")
 // Starts Function on Submit
 
 startButton.addEventListener("click", function(){
-    fetch(charityNavigatorURL)
+    fetch("https://api.data.charitynavigator.org/v2/Organizations?app_id=1f1b3eac&app_key=3ec0b4533e236b7a527fbf81dd68dd75&state=WA&city=Seattle&zip=" + zipCode.value)
 
     .then(function(response){
         return response.json();
@@ -27,26 +27,29 @@ startButton.addEventListener("click", function(){
         var filteredCharities = [];
 
         // This filters out data classification
-        for ( var i = 0; i<data.length; i++) {
+        for ( var i = 0; i <data.length; i++) {
           if (selectedCause === data[i].irsClassification.nteeType){
             filteredCharities.push(data[i]);
+
             var charityCity = data[i].mailingAddress.city;
+            var charityName = data[i].charityName;
+            var charityAddress = data[i].mailingAddress.streetAddress1;
+            var charityWebsite = data[i].charityNavigatorURL;
+
             var charityCityTag = document.createElement('p');
             var cityTag = document.createElement('p');
-            var charityName = data[i].charityName;
             var charityAddressTag = document.createElement('p');
-            var charityAddress = data[i].mailingAddresstreetAddress1;
             var charMailAdd = document.createElement('p');
-            var charityWebsite = data[i].charityNavigatorURL;
             var websiteAnchor = document.createElement('a');
-              console.log(websiteAnchor)
+              
+            console.log(websiteAnchor)
 
             cityTag.append(charityName);
             charityAddressTag.append(charityAddress);
             charityCityTag.append(charityCity)
             websiteAnchor.setAttribute('href', charityWebsite);
             websiteAnchor.innerHTML = charityWebsite;
-            resultsTag.append(cityTag, charityAddressTagcharityCityTag, websiteAnchor);
+            resultsTag.append(cityTag, charityAddressTag, charityCityTag, websiteAnchor);
           }
         }
         console.log(filteredCharities);
