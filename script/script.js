@@ -1,4 +1,3 @@
-
 // Constants for Charity Navigator API Used
 
 const charityNavigatorKey = "3ec0b4533e236b7a527fbf81dd68dd75";
@@ -54,13 +53,6 @@ startButton.addEventListener("click", function(){
                 console.log(websiteAnchor)
 
 
-<<<<<<< HEAD
-                cityTag.append("charityName", charityAddress, charityCity);
-                
-                websiteAnchor.setAttribute('href', charityWebsite);
-                websiteAnchor.innerHTML = charityWebsite;
-                resultsTag.append(cityTag, charityNameTag, websiteAnchor);
-=======
 
                 cityTag.append(charityName);
                 charityAddressTag.append(charityAddress);
@@ -68,7 +60,6 @@ startButton.addEventListener("click", function(){
                 websiteAnchor.setAttribute('href', charityWebsite);
                 websiteAnchor.innerHTML = charityWebsite;
                 resultsTag.append(cityTag, charityAddressTag, charityCityTag, websiteAnchor);
->>>>>>> 89f4ae2ae71c66205596a01770728d05c76b0e66
 
 
                 
@@ -98,4 +89,5 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
          zoom: 8,
        });
      }
+
 
