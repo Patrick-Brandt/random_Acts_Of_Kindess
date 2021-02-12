@@ -63,11 +63,27 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
      let map;
 
      function initMap() {
-         console.log('test')
-       map = new google.maps.Map(document.getElementById("map"), {
-         center: { lat: 47.6062095, lng: -122.3320708 },
-         zoom: 8,
-       });
-     }
-
-
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        center: { lat: 47.6062095, lng: -122.3320708 },
+      });
+      const geocoder = new google.maps.Geocoder();
+      document.getElementById("submit").addEventListener("click", () => {
+        geocodeAddress(geocoder, map);
+      });
+    }
+    
+    function geocodeAddress(geocoder, resultsMap) {
+      const address = document.getElementById("address").value;
+      geocoder.geocode({ address: address }, (results, status) => {
+        if (status === "OK") {
+          resultsMap.setCenter(results[0].geometry.location);
+          new google.maps.Marker({
+            map: resultsMap,
+            position: results[0].geometry.location,
+          });
+        } else {
+          alert("Geocode was not successful for the following reason: " + status);
+        }
+      });
+    }
