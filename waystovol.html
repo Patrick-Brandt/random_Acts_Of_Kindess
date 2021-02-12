@@ -56,7 +56,7 @@
     <form class="container">
         <div class="form-group">
           <label for="FormControlcity">Your Zip Code</label>
-          <input type="text" class="form-control"  placeholder="Zip Code">
+          <input type="text" class="form-control zipCode"  placeholder="Zip Code">
         </div>
         <div class="form-group">
           <label for="FormControArea">Volunteer Categories</label>
@@ -70,7 +70,12 @@
         <button type="button" id="search-btn">Submit</button>
        <div class="form-group results"></div>
       </form>
+      <!--Local storage will be appended here-->
+      <div> <p>Zip Code History</p>
+          <ul class="localStorage">
 
+          </ul>
+      </div>
       <div id="map"></div>
 
     <!-- jQuery and bootstrap bundele links to displaye humburgure menu(hide elements of navbar) and others -->
