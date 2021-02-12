@@ -7,7 +7,6 @@ body {
 .container {
   padding-left: 50px;
   margin-top: 0ch;
-  width: 850px;
 }
 
 .jumbotron {
@@ -19,6 +18,15 @@ margin-bottom: 0;
 span {
   color: red;
 } 
+
+.carousel-control-next,
+.carousel-control-prev { /*carousel-indicators */ 
+    filter: invert(100%);
+}
+
+#map {
+  max-width: 720px;
+}
 
 
 

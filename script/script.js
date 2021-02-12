@@ -35,9 +35,7 @@ startButton.addEventListener("click", function(){
             var cityTag = document.createElement('p');
             var charityName = data[i].charityName;
             var charityAddressTag = document.createElement('p');
-            var charityAddress = data[i].mailingAddress.streetAddress1;
-            var charityZipCode = data[i].mailingAddress.postalCode;
-            var charityZipCodeTag = document.createElement('p');
+            var charityAddress = data[i].mailingAddresstreetAddress1;
             var charMailAdd = document.createElement('p');
             var charityWebsite = data[i].charityNavigatorURL;
             var websiteAnchor = document.createElement('a');
@@ -46,12 +44,12 @@ startButton.addEventListener("click", function(){
             cityTag.append(charityName);
             charityAddressTag.append(charityAddress);
             charityCityTag.append(charityCity)
-            charityZipCodeTag.append(charityZipCode)
             websiteAnchor.setAttribute('href', charityWebsite);
             websiteAnchor.innerHTML = charityWebsite;
-            resultsTag.append(cityTag, charityAddressTag, charityCityTag, charityZipCodeTag, websiteAnchor);
+            resultsTag.append(cityTag, charityAddressTag, websiteAnchor);
           }
         }
+        console.log(filteredCharities);
      });
 });
 
@@ -62,28 +60,11 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
      let map;
 
      function initMap() {
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        center: { lat: 47.6062095, lng: -122.3320708 },
-      });
-      const geocoder = new google.maps.Geocoder();
-      const infoWindow = new google.maps.InfoWindow();
-      document.getElementById("search-btn").addEventListener("click", () => {
-        geocodeAddress(geocoder, map, infoWindow);
-      });
-    }
-    
-    function geocodeAddress(geocoder, resultsMap) {
-      const address = document.getElementById("address").value;
-      geocoder.geocode({ address: address }, (results, status) => {
-        if (status === "OK") {
-          resultsMap.setCenter(results[0].geometry.location);
-          new google.maps.Marker({
-            map: resultsMap,
-            position: results[0].geometry.location,
-          });
-        } else {
-          alert("Geocode was not successful for the following reason: " + status);
-        }
-      });
-    }
+         console.log('test')
+       map = new google.maps.Map(document.getElementById("map"), {
+         center: { lat: 47.6062095, lng: -122.3320708 },
+         zoom: 8,
+       });
+     }
+
+
