@@ -7,7 +7,7 @@ var charityNavigatorURL = "https://api.data.charitynavigator.org/v2/Organization
 var startButton = document.getElementById("search-btn")
 var appendList = document.querySelector(".charity")
 var zipCode = document.querySelector(".zipCode")
-var localStorageList = document.querySelector("localStorage")
+var localStorageList = document.querySelector(".localStorage")
 //array for local storage
 var storedZip = [];
 
@@ -81,9 +81,9 @@ const googleMapKey = 'AIzaSyBNRfgI2l7u-g8OLKgIL4ueoq_XDs9b-Ew';
      }
 function initLocalStorage(){
   var localStorageZips = JSON.parse(localStorage.getItem("zipCodes"));
-  if (localStorageList !== null){
+  console.log(localStorageZips, "local storage")
+  if (localStorageZips !== null){
     
-
     for(i = 0; i < localStorageZips.length; i++) {
       var zip = localStorageZips[i];
       var newLi = document.createElement("li");
