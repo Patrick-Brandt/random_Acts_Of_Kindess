@@ -8,22 +8,18 @@ body {
   padding-left: 50px;
   margin-top: 0ch;
 }
-
 .jumbotron {
 padding-top: 0;
 padding-bottom: 5px;
 margin-bottom: 0;
 }
-
 span {
   color: red;
 } 
-
 .carousel-control-next,
 .carousel-control-prev { /*carousel-indicators */ 
     filter: invert(100%);
 }
-
 #map {
   max-width: 720px;
 }
